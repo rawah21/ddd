@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R✘wah-Musics</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="icon" href="./svg/wh-modified.png">
+</head>
+<body>
+<div class="scale">
+  <div class="wrapper">
+    <div class="top-bar">
+      <i class="material-icons">expand_more</i>
+      <!-- adding typer js -->
+      <span class="input"></span>
+      <li class="Home"><a href="../index.html">HOME <img width="12" src="./svg/back-svgrepo-com.svg" alt=""></a></li>
+    </div>
+    <div class="img-area">
+      <img src="./images/all-music.jpg" alt="">
+    </div>
+    <div class="song-details">
+      <p class="name">علي الأخرس - يادنيا كل العالم اذوني</p>
+      <p class="artist">علي الأخرس</p>
+    </div>
+    <div class="progress-area">
+      <div class="progress-bar">
+        <audio id="main-audio" src=""></audio>
+      </div>
+      <div class="song-timer">
+        <span class="current-time">0:00</span>
+        <span class="max-duration"></span>
+      </div>
+    </div>
+    <div class="controls">
+      <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+      <i id="prev" class="material-icons">skip_previous</i>
+      <div class="play-pause">
+        <i class="material-icons play">play_arrow</i>
+      </div>
+      <i id="next" class="material-icons">skip_next</i>
+      <i id="more-music" class="material-icons">queue_music</i>
+    </div>
+    <div class="music-list">
+      <div class="header">
+        <div class="row">
+          <i class= "list material-icons">queue_music</i>
+          <span>Favorite</span>
+        </div>
+        <i id="close" class="material-icons">close</i>
+      </div>
+      <ul>
+        <!-- here li list are coming from js -->
+      </ul>
+    </div>
+  </div>
+</div>
+  
+
+  <script src="js/mucik_list.js"></script>
+  <script src="js/index.js"></script>
+  <!-- typer js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    
+    var typed = new Typed(".input", {
+        strings:["Now","Play","IT"],
+        typeSpeed: 70,
+        backSpeed: 60,
+        loop:true
+    });
+
+  </script>
+
+</body>
+</html>
